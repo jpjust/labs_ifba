@@ -1,0 +1,8 @@
+deb/*
+files/*
+
+pacotes/android-cmdtools/opt
+pacotes/android-studio/opt
+pacotes/flutter/opt
+pacotes/intellij/opt
+pacotes/nodejs/opt

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=IntelliJ
+Comment=IntelliJ
+Exec=/opt/intellij/bin/idea.sh
+Icon=/opt/intellij/bin/idea.svg
+Terminal=false
+Type=Application
+Categories=Development;
