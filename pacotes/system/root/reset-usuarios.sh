@@ -11,8 +11,8 @@ fi
 
 rm -rf /home/aluno*
 tar -zxf /root/files/usuarios.tar.gz -C /
-find /etc/skel -mindepth 1 -maxdepth 1 -exec cp -r {} /home/aluno1/ \;
-find /etc/skel -mindepth 1 -maxdepth 1 -exec cp -r {} /home/aluno2/ \;
+cp -r /etc/skel/. /home/aluno1/
+cp -r /etc/skel/. /home/aluno2/
 
 # Android SDK
 echo "export ANDROID_HOME=\"/home/aluno1/Android/Sdk\"" >> /home/aluno1/.profile
