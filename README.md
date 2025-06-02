@@ -60,7 +60,7 @@ Em `pacotes/usuarios` você poderá adicionar arquivos que serão copiados autom
 
 1. Copie todos os arquivos para um pen drive, exceto a pasta `pacotes`. Ela é usada para gerar os arquivos em `files`.
 
-2. Execute `script.sh` para fazer a implantação. Preste atenção, pois em alguns momentos poderão ser solicitados alguns prompts de instalação dos pacotes e os dados dos usuários `aluno1` e `aluno2`.
+2. Execute `script.sh` para fazer a implantação. Preste atenção, pois em alguns momentos poderão ser solicitados alguns prompts de instalação dos pacotes.
 
 3. Após a implantação, reinicie.
 
