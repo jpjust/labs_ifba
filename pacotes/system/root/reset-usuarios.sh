@@ -3,10 +3,12 @@
 echo "--- Configurando os usuários..."
 
 if ! getent passwd "aluno1" > /dev/null; then
-  adduser aluno1
+  useradd -m -c "Aluno 1" -s /bin/bash aluno1
+  echo "aluno1:aluno" | chpasswd
 fi
 if ! getent passwd "aluno2" > /dev/null; then
-  adduser aluno2
+  useradd -m -c "Aluno 2" -s /bin/bash aluno2
+  echo "aluno2:aluno" | chpasswd
 fi
 
 rm -rf /home/aluno*
