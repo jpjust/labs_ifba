@@ -71,3 +71,9 @@ Para resetar os usuários, ou seja, limpar as pastas dos usuários e voltar ao e
 ATENÇÂO: Todos os arquivos das pastas dos usuários (todos os usuários do sistema) serão permanentemente apagados!
 
 Recomenda-se fazer isso após o final de cada semestre ou ano letivo para deixar o laboratório pronto para o próximo período.
+
+## Multi-seat
+
+A configuração de multi-seat permite que uma mesma máquina compartilhe dois monitores, teclados e mouses, permitido que dois alunos a utilizem simultaneamente com usuários e sessões separadas.
+
+Cada laboratório tem uma configuração específica de multi-seat que depende do seu hardware. Verifique os scripts `labX-seatN.sh`. Eles correspondem a um laboratório específico e devem ser executados em ordem `N`.
