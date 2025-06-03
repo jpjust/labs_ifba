@@ -80,4 +80,8 @@ fi
 # Reseta os usuários
 /root/reset-usuarios.sh
 
+# Usuários do Postgre
+sudo -u postgres createuser -d aluno1
+sudo -u postgres createuser -d aluno2
+
 echo "--- Pronto!"
