@@ -2,7 +2,7 @@
 
 # Arquivos do sistema
 echo "--- Instalando arquivos de sistema..."
-tar -zxf files/system.tar.gz -C /
+tar -zxf files/system.tar.gz --no-same-owner -C /
 
 if [ ! -d "/root/files" ]; then
   mkdir /root/files
@@ -26,7 +26,8 @@ apt upgrade -y
 echo "--- Instalando pacotes do laboratório..."
 apt install -y build-essential btop chromium clang cmake flatpak g++ gcc git \
   libgtk-3-dev linux-headers-amd64 mc ncdu neovim net-tools ninja-build nmap \
-  openjdk-17-jdk postgresql preload python3 r-base r-base-dev vim wireshark-qt
+  ntp openjdk-17-jdk postgresql preload python3 r-base r-base-dev vim \
+  wireshark-qt
 
 ## Flutter (copiado da documentação)
 apt install -y curl git unzip xz-utils zip libglu1-mesa mesa-utils
@@ -44,11 +45,11 @@ apt upgrade -y
 
 # Arquivos
 echo "--- Copiando arquivos..."
-tar -zxf files/android-studio.tar.gz -C /
-tar -zxf files/android-cmdtools.tar.gz -C /
-tar -zxf files/flutter.tar.gz -C /
-tar -zxf files/intellij.tar.gz -C /
-tar -zxf files/nodejs.tar.gz -C /
+tar -zxf files/android-studio.tar.gz --no-same-owner -C /
+tar -zxf files/android-cmdtools.tar.gz --no-same-owner -C /
+tar -zxf files/flutter.tar.gz --no-same-owner -C /
+tar -zxf files/intellij.tar.gz --no-same-owner -C /
+tar -zxf files/nodejs.tar.gz --no-same-owner -C /
 
 # Configurações
 ## fsck automático
