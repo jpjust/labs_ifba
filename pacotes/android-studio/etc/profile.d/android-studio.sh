@@ -1,1 +1,1 @@
-export PATH="/opt/Android/Studio/bin"
+export PATH="/opt/Android/Studio/bin:$PATH"
