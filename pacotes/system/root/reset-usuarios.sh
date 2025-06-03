@@ -12,7 +12,7 @@ if ! getent passwd "aluno2" > /dev/null; then
 fi
 
 rm -rf /home/aluno*
-tar -zxf /root/files/usuarios.tar.gz -C /
+tar -zxf /root/files/usuarios.tar.gz --no-same-owner -C /
 cp -r /etc/skel/. /home/aluno1/
 cp -r /etc/skel/. /home/aluno2/
 
