@@ -1,16 +1,7 @@
 #!/bin/sh -e
 
 # Arquivos do sistema
-echo "--- Instalando arquivos de sistema..."
-tar -zxf files/system.tar.gz --no-same-owner -C /
-
-if [ ! -d "/root/files" ]; then
-  mkdir /root/files
-fi
-
-cp files/usuarios.tar.gz /root/files/
-chown -R root: /root
-chmod 0700 /root
+system.sh
 
 # Configuração do APT e pacotes
 echo "--- Configurando o apt-get..."
