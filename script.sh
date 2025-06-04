@@ -17,7 +17,7 @@ apt upgrade -y
 echo "--- Instalando pacotes do laboratório..."
 apt install -y build-essential btop chromium clang cmake flatpak g++ gcc git \
   libgtk-3-dev linux-headers-amd64 mc ncdu neovim net-tools ninja-build nmap \
-  ntp openjdk-17-jdk postgresql preload python3 r-base r-base-dev vim \
+  ntp openjdk-17-jdk postgresql preload python3 r-base r-base-dev ssh vim \
   wireshark-qt
 
 ## Flutter (copiado da documentação)
