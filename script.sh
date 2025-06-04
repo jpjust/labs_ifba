@@ -1,7 +1,7 @@
 #!/bin/sh -e
 
 # Arquivos do sistema
-system.sh
+./system.sh
 
 # Configuração do APT e pacotes
 echo "--- Configurando o apt-get..."
