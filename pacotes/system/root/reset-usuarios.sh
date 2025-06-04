@@ -16,12 +16,6 @@ tar -zxf /root/files/usuarios.tar.gz --no-same-owner -C /
 cp -r /etc/skel/. /home/aluno1/
 cp -r /etc/skel/. /home/aluno2/
 
-# Android SDK
-echo "export ANDROID_HOME=\"/home/aluno1/Android/Sdk\"" >> /home/aluno1/.profile
-echo "export ANDROID_HOME=\"/home/aluno2/Android/Sdk\"" >> /home/aluno2/.profile
-echo "export PATH=\"\$ANDROID_HOME/cmdline-tools/latest/bin:\$ANDROID_HOME/platform-tools:\$PATH\"" >> /home/aluno2/.profile
-echo "export PATH=\"\$ANDROID_HOME/cmdline-tools/latest/bin:\$ANDROID_HOME/platform-tools:\$PATH\"" >> /home/aluno2/.profile
-
 chown -R aluno1: /home/aluno1
 chown -R aluno2: /home/aluno2
 
