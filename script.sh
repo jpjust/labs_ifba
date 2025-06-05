@@ -57,7 +57,9 @@ sed -i 's/^hosts:.*/hosts: files mdns mdns4_minimal [NOTFOUND=return] dns/' /etc
 sed -i 's/^#*HandleSuspendKey=.*/HandleSuspendKey=ignore/' /etc/systemd/logind.conf
 sed -i 's/^#*HandleLidSwitch=.*/HandleLidSwitch=ignore/' /etc/systemd/logind.conf
 sed -i 's/^#*HandleLidSwitchDocked=.*/HandleLidSwitchDocked=ignore/' /etc/systemd/logind.conf
-systemctl restart systemd-logind
+
+## systemd-timesyncd
+sed -i 's/^#*NTP=.*/NTP=ntp.on.br/' /etc/systemd/timesyncd.conf
 
 # Swap
 if [ ! -e "/swap.img" ]; then
