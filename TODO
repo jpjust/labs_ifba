@@ -1,2 +1,1 @@
 - Fazer com que a instalação de pacotes .tar.gz seja automatizada, sem necessitar especificar os nomes dos arquivos.
-- Colocar os pacotes do respositório oficial em um aquivo separado, facilitando a adição de novos pacotes.

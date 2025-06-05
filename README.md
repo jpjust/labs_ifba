@@ -2,6 +2,12 @@
 
 ## Preparação
 
+### Pacotes do repositório Debian
+
+Todos os pacotes que serão instalados via `apt` estão no arquivo `pacotes_apt.txt`. Edite o arquivo para adicionar ou remover pacotes à sua vontade.
+
+No arquivo `pacotes_purge.txt` há uma lista de pacotes que serão removidos durante a execução do script. Use-o para excluir pacotes que não queira que façam parte do sistema.
+
 ### Pacotes `.deb`
 
 Caso queira instalar quaisquer pacotes `.deb` na implantação do laboratório copie os arquivos `.deb` dos pacotes que você quer instalar para a pasta `deb`. O script de implantação irá instalar todos os pacotes nesta pasta automaticamente, incluindo eventuais dependências.

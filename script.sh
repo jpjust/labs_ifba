@@ -8,21 +8,13 @@ echo "--- Configurando o apt-get..."
 apt update
 
 echo "--- Removendo pacotes desnecessários..."
-apt purge -y cups* thunderbird* rhythmbox brasero transmission* hexchat \
-  parole simple-scan gnome-games gnome-sudoku gnome-mahjongg gnome-mines
+grep -vE '^\s*#|^\s*$' pacotes_purge.txt | xargs apt purge -y
 
 echo "--- Atualizando o sistema..."
 apt upgrade -y
 
 echo "--- Instalando pacotes do laboratório..."
-apt install -y build-essential btop chromium clang cmake flatpak g++ gcc git \
-  libgtk-3-dev linux-headers-amd64 mc ncdu neovim net-tools ninja-build nmap \
-  ntp openjdk-17-jdk postgresql preload python3 r-base r-base-dev ssh vim \
-  wireshark-qt
-
-## Flutter (copiado da documentação)
-apt install -y curl git unzip xz-utils zip libglu1-mesa mesa-utils
-apt install -y libc6:amd64 libstdc++6:amd64 lib32z1 libbz2-1.0:amd64
+grep -vE '^\s*#|^\s*$' pacotes_apt.txt | xargs apt install -y
 
 ## Pacotes não mais necessários
 apt autoremove -y

@@ -1,0 +1,12 @@
+cups*
+thunderbird*
+rhythmbox
+brasero
+transmission*
+hexchat
+parole
+simple-scan
+gnome-games
+gnome-sudoku
+gnome-mahjongg
+gnome-mines
