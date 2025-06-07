@@ -1,5 +1,19 @@
 #!/bin/sh -e
 
+echo "--- Configurando a partição extra..."
+
+if [ ! -d "/home/aluno1/Arquivos" ]; then
+  mkdir -p /home/aluno1/Arquivos
+fi
+if [ ! -d "/home/aluno2/Arquivos" ]; then
+  mkdir -p /home/aluno2/Arquivos
+fi
+
+echo "/dev/sdb3 /home/aluno1/Arquivos ext4 user,noatime,nodiratime,errors=remount-ro 0 2" >> /etc/fstab
+echo "/dev/sdb4 /home/aluno2/Arquivos ext4 user,noatime,nodiratime,errors=remount-ro 0 2" >> /etc/fstab
+chown -R aluno1: /home/aluno1/Arquivos
+chown -R aluno2: /home/aluno2/Arquivos
+
 echo "--- Instalando o LightDM..."
 apt update
 apt install -y lightdm
