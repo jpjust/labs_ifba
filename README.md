@@ -83,3 +83,15 @@ Recomenda-se fazer isso após o final de cada semestre ou ano letivo para deixar
 A configuração de multi-seat permite que uma mesma máquina compartilhe dois monitores, teclados e mouses, permitido que dois alunos a utilizem simultaneamente com usuários e sessões separadas.
 
 Cada laboratório tem uma configuração específica de multi-seat que depende do seu hardware. Verifique os scripts `labX-seatN.sh`. Eles correspondem a um laboratório específico e devem ser executados em ordem `N`.
+
+## Configurações do dconf
+
+Para criar configurações do dconf para serem aplicadas automaticamente basta adicionar ou editar um arquivo `.ini` em `pacotes/system/etc/skel/.config/dconf`. Coloque as configurações que desejar no arquivo criado.
+
+Após a criação do arquivo a configuração precisa ser compilada. Apague o arquivo `user` que está no mesmo diretório e execute o comando a seguir:
+
+```sh
+dconf compile user .
+```
+
+O dconf irá usar os arquivos `.ini` no diretório para compilar um novo arquivo `user` de configuração. Feito isto basta re-gerar o pacote com `gera-pacotes.sh`.
