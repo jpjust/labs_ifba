@@ -95,3 +95,7 @@ dconf compile user .
 ```
 
 O dconf irá usar os arquivos `.ini` no diretório para compilar um novo arquivo `user` de configuração. Feito isto basta re-gerar o pacote com `gera-pacotes.sh`.
+
+## Atualização do Debian
+
+Se for atualizar o Debian, por exemplo do `bookworm` para `trixie`, lembre de pesquisar o codename em todos os arquivos de configuração e atualizar. Também verifique os pacotes dentro de `deb`.
