@@ -50,7 +50,8 @@ sed -i 's/^#*HandleSuspendKey=.*/HandleSuspendKey=ignore/' /etc/systemd/logind.c
 sed -i 's/^#*HandleLidSwitch=.*/HandleLidSwitch=ignore/' /etc/systemd/logind.conf
 sed -i 's/^#*HandleLidSwitchDocked=.*/HandleLidSwitchDocked=ignore/' /etc/systemd/logind.conf
 
-## systemd-timesyncd
+## Relógio e NTP
+timedatectl set-local-rtc 1
 sed -i 's/^#*NTP=.*/NTP=ntp.on.br/' /etc/systemd/timesyncd.conf
 
 # Swap
