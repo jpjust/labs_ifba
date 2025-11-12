@@ -26,7 +26,6 @@ r-base-dev
 ssh
 systemd-timesyncd
 vim
-virtualbox-7.1
 wireshark
 
 # Flutter (via documentação)

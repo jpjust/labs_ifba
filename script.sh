@@ -3,9 +3,6 @@
 # Arquivos do sistema
 ./system.sh
 
-# Chaves do VirtualBox
-wget -O- https://www.virtualbox.org/download/oracle_vbox_2016.asc | sudo gpg --yes --output /usr/share/keyrings/oracle-virtualbox-2016.gpg --dearmor
-
 # Configuração do APT e pacotes
 echo "--- Configurando o apt-get..."
 apt update
