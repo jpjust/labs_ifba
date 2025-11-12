@@ -1,4 +1,7 @@
 #!/bin/sh -e
+#
+# Use a variável de ambient ALUNO2 para definir se deverá ser criado um usuário aluno2
+# Ex.: ALUNO2=1 ./script.sh
 
 # Arquivos do sistema
 ./system.sh
@@ -64,11 +67,22 @@ if [ ! -e "/swap.img" ]; then
   swapon -a
 fi
 
-# Reseta os usuários
+# Configura os usuários
+if ! getent passwd "aluno1" > /dev/null; then
+  useradd -m -c "Aluno 1" -s /bin/bash aluno1
+fi
+if [ -n "$ALUNO2" ] && ! getent passwd "aluno1" > /dev/null; then
+   useradd -m -c "Aluno 2" -s /bin/bash aluno2
+fi
 /root/reset-usuarios.sh
 
 # Usuários do Postgre
 sudo -u postgres createuser -d aluno1
-sudo -u postgres createuser -d aluno2
+if getent passwd "aluno2" > /dev/null; then
+  sudo -u postgres createuser -d aluno2
+fi
+
+# Instalando o VirtualBox
+./instala_virtualbox.sh
 
 echo "--- Pronto!"
