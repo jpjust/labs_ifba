@@ -3,8 +3,8 @@
 if [ $# -lt 3 ]; then
   echo "Uso: $0 num_lab arquivo caminho_destino"
   echo ""
-  echo "Exemplo: $0 4 aula.txt /home/aluno1/Documentos/"
-  echo " - Copia o arquivo aula.txt para a pasta de documentos do aluno1 no laboratório 4."
+  echo "Exemplo: $0 4 aula.txt /home/aluno/Documentos/"
+  echo " - Copia o arquivo aula.txt para a pasta de documentos do aluno no laboratório 4."
   exit 1
 fi
 

@@ -60,7 +60,7 @@ Após ter preparado todos os pacotes de software execute o script `gera-pacotes.
 
 ### Pasta dos usuários
 
-Em `pacotes/usuarios` você poderá adicionar arquivos que serão copiados automaticamente às pastas dos usuários `aluno1` e `aluno2`. Coloque os arquivos obedecendo a hierarquia de pastas dos usuários do Linux.
+Em `pacotes/usuarios` você poderá adicionar arquivos que serão copiados automaticamente às pastas dos usuários `aluno` e `aluno2`. Coloque os arquivos obedecendo a hierarquia de pastas dos usuários do Linux.
 
 ## Implantação
 

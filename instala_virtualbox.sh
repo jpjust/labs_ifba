@@ -17,7 +17,7 @@ apt install -y --allow-downgrades virtualbox-7.1
 for grupo in "kvm" "libvirt" "libvirt-qemu" "vboxusers" "video" "wireshark"
 do
   if getent group $grupo > /dev/null; then
-    usermod -aG $grupo aluno1
+    usermod -aG $grupo aluno
     if getent passwd "aluno2" > /dev/null; then
       usermod -aG $grupo aluno2
     fi

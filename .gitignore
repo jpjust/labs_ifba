@@ -5,6 +5,7 @@ pacotes/android-cmdtools/opt
 pacotes/android-studio/opt
 pacotes/flutter/opt
 pacotes/intellij/opt
+pacotes/netbeans/opt
 pacotes/nodejs/opt
 
 !.gitkeep

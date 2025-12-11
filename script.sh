@@ -68,16 +68,16 @@ if [ ! -e "/swap.img" ]; then
 fi
 
 # Configura os usuários
-if ! getent passwd "aluno1" > /dev/null; then
-  useradd -m -c "Aluno 1" -s /bin/bash aluno1
+if ! getent passwd "aluno" > /dev/null; then
+  useradd -m -c "Aluno" -s /bin/bash aluno
 fi
-if [ -n "$ALUNO2" ] && ! getent passwd "aluno1" > /dev/null; then
+if [ -n "$ALUNO2" ] && ! getent passwd "aluno2" > /dev/null; then
    useradd -m -c "Aluno 2" -s /bin/bash aluno2
 fi
 /root/reset-usuarios.sh
 
 # Usuários do Postgre
-sudo -u postgres createuser -d aluno1
+sudo -u postgres createuser -d aluno
 if getent passwd "aluno2" > /dev/null; then
   sudo -u postgres createuser -d aluno2
 fi

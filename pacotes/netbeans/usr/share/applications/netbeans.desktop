@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=NetBeans
+Comment=NetBeans
+Exec=/opt/netbeans/bin/netbeans
+Icon=/opt/netbeans/nb/netbeans.png
+Terminal=false
+Type=Application
+Categories=Development;

@@ -1,1 +1,1 @@
-export PATH="/opt/node/bin:$PATH"
+export PATH="$HOME/node/bin:/opt/node/bin:$PATH"

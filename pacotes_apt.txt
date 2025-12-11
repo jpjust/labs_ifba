@@ -5,10 +5,14 @@ chromium
 clang
 cmake
 dkms
+filezilla
 flatpak
 g++
 gcc
+gimp
 git
+inkscape
+klavaro
 libgtk-3-dev
 linux-headers-amd64
 mc
