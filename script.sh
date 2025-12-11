@@ -31,10 +31,11 @@ apt upgrade -y
 
 # Arquivos
 echo "--- Copiando arquivos..."
-tar -zxf files/android-studio.tar.gz --no-same-owner -C /
 tar -zxf files/android-sdk.tar.gz --no-same-owner -C /
+tar -zxf files/android-studio.tar.gz --no-same-owner -C /
 tar -zxf files/flutter.tar.gz --no-same-owner -C /
 tar -zxf files/intellij.tar.gz --no-same-owner -C /
+tar -zxf files/netbeans.tar.gz --no-same-owner -C /
 tar -zxf files/nodejs.tar.gz --no-same-owner -C /
 
 # Configurações
