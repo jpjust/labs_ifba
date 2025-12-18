@@ -11,7 +11,7 @@ echo "--- Atualizando o sistema..."
 apt upgrade -y
 
 echo "--- Instalando pacotes do VirtualBox..."
-apt install -y --allow-downgrades virtualbox-7.1
+apt install -y --allow-downgrades virtualbox-7.2
 
 # Grupos para VirtualBox
 for grupo in "kvm" "libvirt" "libvirt-qemu" "vboxusers" "video" "wireshark"

@@ -83,7 +83,4 @@ if getent passwd "aluno2" > /dev/null; then
   sudo -u postgres createuser -d aluno2
 fi
 
-# Instalando o VirtualBox
-./instala_virtualbox.sh
-
 echo "--- Pronto!"
